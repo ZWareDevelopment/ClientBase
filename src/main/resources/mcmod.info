@@ -1,0 +1,16 @@
+[
+{
+  "modid": "clientbase",
+  "name": "ClientBase",
+  "description": "Minecraft Utility mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Zihasz"],
+  "credits": "Forge Team for Forge, Zero for Alpine, Minnced for DiscordRPC, SpongePowered for Mixins",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

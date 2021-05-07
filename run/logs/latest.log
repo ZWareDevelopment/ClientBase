@@ -1,0 +1,377 @@
+[20:32:50] [main/INFO] [GradleStart]: Extra: []
+[20:32:50] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/ihasz/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:32:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[20:32:50] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[20:32:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:32:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[20:32:50] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[20:32:50] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_282, running on Windows 10:amd64:10.0, installed at C:\Program Files\AdoptOpenJDK\jdk-8.0.282.8-hotspot\jre
+[20:32:50] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[20:32:50] [main/ERROR] [FML]: Full: C:\Users\ihasz\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[20:32:50] [main/ERROR] [FML]: Trimmed: c:/users/ihasz/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[20:32:51] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[20:32:51] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[20:32:52] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[20:32:52] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[20:32:52] [main/INFO] [FML]: Found a command line coremod : dev.zihasz.clientbase.mixin.MixinLoader
+[20:32:52] [main/WARN] [FML]: The coremod dev.zihasz.clientbase.mixin.MixinLoader does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[20:32:52] [main/INFO] [FML]: Ignoring missing certificate for coremod MixinLoader (dev.zihasz.clientbase.mixin.MixinLoader), as this is probably a dev workspace
+[20:32:53] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.7.4 Source=file:/C:/Users/ihasz/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.7.4-SNAPSHOT/d22c5b223b3ff950cd165446dbc88afb162a8b6e/mixin-0.7.4-SNAPSHOT.jar Service=LaunchWrapper Env=CLIENT
+[20:32:53] [main/INFO] [mixin]: Compatibility level set to JAVA_8
+[20:32:53] [main/ERROR] [mixin]: Mixin config mixins.clientbase.json does not specify "minVersion" property
+[20:32:53] [main/INFO] [FML]: Searching C:\Programming\Clients\ClientBase\run\.\mods for mods
+[20:32:53] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:32:53] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[20:32:53] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[20:32:53] [main/INFO] [GradleStart]: Injecting location in coremod dev.zihasz.clientbase.mixin.MixinLoader
+[20:32:53] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:32:53] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[20:32:53] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[20:32:53] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[20:32:53] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:32:53] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:32:53] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:32:57] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[20:32:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:32:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:32:57] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[20:32:57] [main/INFO] [mixin]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@73a19967
+[20:32:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[20:32:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[20:32:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[20:32:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[20:32:57] [main/WARN] [mixin]: Reference map 'mixins.clientbase.refmap.json' for mixins.clientbase.json could not be read. If this is a development environment you can ignore this message
+[20:32:58] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[20:32:58] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player343
+[20:33:03] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[20:33:03] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[20:33:04] [main/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_282, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), AdoptOpenJDK
+	Memory: 226148088 bytes (215 MB) / 624951296 bytes (596 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 461.09' Renderer: 'GeForce GTX 950/PCIe/SSE2'
+[20:33:04] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[20:33:04] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[20:33:05] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[20:33:05] [main/INFO] [FML]: Searching C:\Programming\Clients\ClientBase\run\.\mods for mods
+[20:33:07] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[20:33:07] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 279139400 nanos
+[20:33:07] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, client] at CLIENT
+[20:33:07] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, client] at SERVER
+[20:33:08] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Client
+[20:33:08] [main/INFO] [FML]: Processing ObjectHolder annotations
+[20:33:08] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[20:33:08] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[20:33:08] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[20:33:09] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[20:33:09] [main/ERROR] [mixin]: Mixin config mixins.clientbase.json does not specify "minVersion" property
+[20:33:09] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[20:33:09] [main/INFO] [FML]: Applying holder lookups
+[20:33:09] [main/INFO] [FML]: Holder lookups applied
+[20:33:09] [main/INFO] [FML]: Applying holder lookups
+[20:33:09] [main/INFO] [FML]: Holder lookups applied
+[20:33:09] [main/INFO] [FML]: Applying holder lookups
+[20:33:09] [main/INFO] [FML]: Holder lookups applied
+[20:33:09] [main/INFO] [FML]: Applying holder lookups
+[20:33:09] [main/INFO] [FML]: Holder lookups applied
+[20:33:09] [main/INFO] [FML]: Injecting itemstacks
+[20:33:09] [main/INFO] [FML]: Itemstack injection complete
+[20:33:11] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2855
+[20:33:16] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[20:33:16] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[20:33:16] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:33:16] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[20:33:17] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[20:33:28] [main/INFO] [FML]: Max texture size: 16384
+[20:33:28] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[20:33:31] [main/INFO] [FML]: Applying holder lookups
+[20:33:31] [main/INFO] [FML]: Holder lookups applied
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at dev.zihasz.clientbase.manager.ConfigManager.loadModules(ConfigManager.java:104)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at dev.zihasz.clientbase.manager.ConfigManager.load(ConfigManager.java:54)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at dev.zihasz.clientbase.Client.init(Client.java:52)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:626)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:744)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:336)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:581)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:421)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraft.client.main.Main.main(Main.java:118)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+[20:33:32] [main/INFO] [STDERR]: [dev.zihasz.clientbase.manager.ConfigManager:load:57]: 	at GradleStart.main(GradleStart.java:25)
+[20:33:32] [main/INFO] [FML]: Injecting itemstacks
+[20:33:32] [main/INFO] [FML]: Itemstack injection complete
+[20:33:32] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[20:33:32] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[20:33:33] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[20:33:34] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[20:34:06] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[20:34:06] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[20:34:07] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[20:34:07] [Server thread/INFO] [FML]: Applying holder lookups
+[20:34:07] [Server thread/INFO] [FML]: Holder lookups applied
+[20:34:07] [Server thread/INFO] [FML]: Loading dimension 0 (Test World) (net.minecraft.server.integrated.IntegratedServer@2fe59f3b)
+[20:34:08] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[20:34:08] [Server thread/INFO] [FML]: Loading dimension -1 (Test World) (net.minecraft.server.integrated.IntegratedServer@2fe59f3b)
+[20:34:08] [Server thread/INFO] [FML]: Loading dimension 1 (Test World) (net.minecraft.server.integrated.IntegratedServer@2fe59f3b)
+[20:34:08] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[20:34:09] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 16%
+[20:34:11] [Server thread/INFO] [FML]: Unloading dimension -1
+[20:34:11] [Server thread/INFO] [FML]: Unloading dimension 1
+[20:34:11] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 8, from 10
+[20:34:13] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[20:34:13] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[20:34:13] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,client@1.0.0,mcp@9.42
+[20:34:13] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[20:34:13] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[20:34:13] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player343[local:E:ea0a682c] logged in with entity id 346 at (-207.1556659261246, 63.0, 326.44216065179234)
+[20:34:13] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player343 joined the game
+[20:34:14] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[20:34:14] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Test World'/overworld
+[20:34:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] chatsuffix.enabled = true
+[20:34:24] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player343> asd | Client
+[20:34:24] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player343> asd | Client
+[20:34:45] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 2 advancements
+[20:34:46] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player343> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[20:34:46] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player343> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[20:34:54] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[20:34:54] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Test World'/overworld
+[20:35:12] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 11 advancements
+[20:35:14] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 15 advancements
+[20:35:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ChatSuffix - Appends a suffix after every chat message.
+[20:35:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SpeedMine - Mines blocks faster
+[20:35:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] PortalGodMode - Makes you invincible while in portals, might cause de-sync/rubber-banding.
+[20:35:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] FullBright - Brightens your game.
+[20:35:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Sprint - Automatically sprints.
+[20:35:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ClickGUI - Enables the ClickGUI.
+[20:35:37] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] speedmine.enabled = true
+[20:35:48] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player343: Set own game mode to Survival Mode]
+[20:35:48] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Your game mode has been updated to Survival Mode
+[20:35:48] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 21 advancements
+[20:36:07] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[20:36:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Test World'/overworld
+[20:36:10] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Client
+[20:36:10] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[20:36:16] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[20:36:17] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[20:36:17] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[20:36:17] [Thread-13/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[20:36:17] [Thread-13/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:36:17] [Thread-13/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[20:36:17] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[20:36:26] [main/INFO] [FML]: Max texture size: 16384
+[20:36:26] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[20:36:40] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 21 advancements
+[20:36:51] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[20:36:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Test World'/overworld
+[20:36:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[20:36:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[20:36:51] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player343 lost connection: Disconnected
+[20:36:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player343 left the game
+[20:36:51] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[20:36:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[20:36:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Test World'/overworld
+[20:36:51] [Server thread/INFO] [FML]: Unloading dimension 0
+[20:36:52] [Server thread/INFO] [FML]: Applying holder lookups
+[20:36:52] [Server thread/INFO] [FML]: Holder lookups applied
+[20:36:52] [main/ERROR] [FML]: Exception caught during firing event net.minecraftforge.fml.common.gameevent.TickEvent$ClientTickEvent@7473419d:
+java.lang.NullPointerException: null
+	at dev.zihasz.clientbase.features.module.player.SpeedMine.onUpdate(SpeedMine.java:17) ~[SpeedMine.class:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:1.8.0_282]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_282]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_282]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_282]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_282]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:1.8.0_282]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:1.8.0_282]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_282]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) ~[?:1.8.0_282]
+	at dev.zihasz.clientbase.event.events.EventProcessor.onTick(EventProcessor.java:18) ~[EventProcessor.class:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_14_EventProcessor_onTick_ClientTickEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) ~[ASMEventHandler.class:?]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182) [EventBus.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:349) [FMLCommonHandler.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2037) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1187) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_282]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_282]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_282]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_282]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_282]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_282]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_282]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_282]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+[20:36:52] [main/ERROR] [FML]: Index: 2 Listeners:
+[20:36:52] [main/ERROR] [FML]: 0: NORMAL
+[20:36:52] [main/ERROR] [FML]: 1: ASM: net.minecraftforge.common.ForgeInternalHandler@728c3a0e checkSettings(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+[20:36:52] [main/ERROR] [FML]: 2: ASM: dev.zihasz.clientbase.event.events.EventProcessor@879ce67 onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+[20:36:53] [main/FATAL] [net.minecraft.client.Minecraft]: Unreported exception thrown!
+java.lang.NullPointerException: null
+	at dev.zihasz.clientbase.features.module.player.SpeedMine.onUpdate(SpeedMine.java:17) ~[SpeedMine.class:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:1.8.0_282]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_282]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_282]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_282]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_282]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:1.8.0_282]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:1.8.0_282]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_282]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) ~[?:1.8.0_282]
+	at dev.zihasz.clientbase.event.events.EventProcessor.onTick(EventProcessor.java:18) ~[EventProcessor.class:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_14_EventProcessor_onTick_ClientTickEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) ~[ASMEventHandler.class:?]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182) ~[EventBus.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:349) ~[FMLCommonHandler.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2037) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1187) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_282]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_282]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_282]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_282]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_282]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_282]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_282]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_282]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+[20:36:53] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: ---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 5/7/21 8:36 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at dev.zihasz.clientbase.features.module.player.SpeedMine.onUpdate(SpeedMine.java:17)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
+	at dev.zihasz.clientbase.event.events.EventProcessor.onTick(EventProcessor.java:18)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_14_EventProcessor_onTick_ClientTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:349)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2037)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1187)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_282, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), AdoptOpenJDK
+	Memory: 1351007224 bytes (1288 MB) / 1515716608 bytes (1445 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State       | ID        | Version      | Source                                               | Signature |
+	|:----------- |:--------- |:------------ |:---------------------------------------------------- |:--------- |
+	| UCHIJAAAAAA | minecraft | 1.12.2       | minecraft.jar                                        | None      |
+	| UCHIJAAAAAA | mcp       | 9.42         | minecraft.jar                                        | None      |
+	| UCHIJAAAAAA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768-PROJECT(ClientBase).jar | None      |
+	| UCHIJAAAAAA | forge     | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768-PROJECT(ClientBase).jar | None      |
+	| UCHIJAAAAAA | client    | 1.0.0        | main                                                 | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 461.09' Renderer: 'GeForce GTX 950/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 950/PCIe/SSE2 GL version 4.6.0 NVIDIA 461.09, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+[20:36:53] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: #@!@# Game crashed! Crash report saved to: #@!@# C:\Programming\Clients\ClientBase\run\.\crash-reports\crash-2021-05-07_20.36.53-client.txt
