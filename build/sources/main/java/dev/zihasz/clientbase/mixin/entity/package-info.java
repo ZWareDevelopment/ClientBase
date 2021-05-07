@@ -1,1 +1,0 @@
-package dev.zihasz.clientbase.mixin.entity;

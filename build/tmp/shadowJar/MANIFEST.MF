@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-TweakOrder: 0
-MixinConfigs: mixins.clientbase.json
-FMLCorePluginContainsFMLMod: true
-FMLAT: clientbase_at.cfg
-tweakClass: org.spongepowered.asm.launch.MixinTweaker
-ForceLoadAsMod: true
-FMLCorePlugin: dev.zihasz.clientbase.mixin.MixinLoader
-
