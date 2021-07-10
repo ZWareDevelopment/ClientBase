@@ -4,7 +4,7 @@ import dev.zihasz.client.ui.GuiBase;
 
 import java.io.IOException;
 
-public class GuiClick extends GuiBase {
+public class GuiClick implements GuiBase {
 
 	public GuiClick() {
 

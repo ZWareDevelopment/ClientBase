@@ -4,7 +4,7 @@ import dev.zihasz.client.ui.GuiBase;
 
 import java.io.IOException;
 
-public class GuiEditor extends GuiBase {
+public class GuiEditor implements GuiBase {
 
 	public GuiEditor() {
 
