@@ -71,6 +71,7 @@ local.properties
 # Minecraft client/server files
 run/
 runs/
+logs/
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
