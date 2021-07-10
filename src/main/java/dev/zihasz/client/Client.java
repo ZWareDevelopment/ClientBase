@@ -1,5 +1,6 @@
 package dev.zihasz.client;
 
+import dev.zihasz.client.clickgui.ClickGui;
 import dev.zihasz.client.manager.feature.CommandManager;
 import dev.zihasz.client.manager.feature.ModuleManager;
 import net.minecraftforge.fml.common.Mod;
@@ -32,6 +33,8 @@ public class Client {
 	public static CommandManager commandManager;
 	public static ModuleManager moduleManager;
 
+	public ClickGui clickGui;
+
 	@EventHandler
 	public void onPreInit(FMLPreInitializationEvent event) {
 
@@ -41,6 +44,7 @@ public class Client {
 	public void onInit(FMLInitializationEvent event) {
 		commandManager = new CommandManager();
 		moduleManager = new ModuleManager();
+		clickGui = new ClickGui();
 	}
 
 	@EventHandler
