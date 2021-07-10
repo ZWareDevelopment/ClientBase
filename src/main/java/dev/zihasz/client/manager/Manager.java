@@ -11,9 +11,4 @@ public abstract class Manager {
 	protected Minecraft mc = Minecraft.getMinecraft();
 	protected Random random = new Random();
 
-	protected Set<Class> findClasses(String pack, Class subType) {
-		Reflections reflections = new Reflections(pack);
-		return reflections.getSubTypesOf(subType);
-	}
-
 }
