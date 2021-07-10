@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class ReflectionUtils implements Util {
 
-	protected Set<?> findClasses(String pack, Class<?> subType) {
-		Reflections reflections = new Reflections(pack);
+	public static Set<Class<?>> findClasses(String pkg, Class subType) {
+		Reflections reflections = new Reflections(pkg);
 		return reflections.getSubTypesOf(subType);
 	}
 
