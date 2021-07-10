@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.7.4",
+  "package": "dev.zihasz.client.core.mixins",
+  "refmap": "mixins.client.refmap.json",
+  "mixins": [
+	"player.MixinEntityPlayerSP",
+	"network.MixinNetworkManager",
+	"player.MixinPlayerControllerMP"
+  ]
+}

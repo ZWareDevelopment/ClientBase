@@ -1,0 +1,18 @@
+[
+  {
+	"modid": "client",
+	"name": "Client",
+	"description": "Just a client",
+	"version": "${version}",
+	"mcversion": "${mcversion}",
+	"url": "",
+	"updateUrl": "",
+	"authorList": [
+	  "Zihasz"
+	],
+	"credits": "zihasz for client",
+	"logoFile": "",
+	"screenshots": [],
+	"dependencies": []
+  }
+]
