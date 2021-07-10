@@ -1,7 +1,6 @@
 package dev.zihasz.client.manager.feature;
 
-import dev.zihasz.client.feature.module.Category;
-import dev.zihasz.client.feature.module.Module;
+import dev.zihasz.client.feature.module.*;
 import dev.zihasz.client.manager.Manager;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -11,11 +10,9 @@ import java.util.stream.Collectors;
 
 public class ModuleManager extends Manager {
 
-	public List<Module> modules = new ArrayList<>();
+	private final List<Module> modules = new ArrayList<>();
 
-	public ModuleManager() {
-		MinecraftForge.EVENT_BUS.register(this);
-	}
+	public ModuleManager() { MinecraftForge.EVENT_BUS.register(this); }
 
 	public void addModule(Module module) { this.modules.add(module); }
 

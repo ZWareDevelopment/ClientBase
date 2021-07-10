@@ -9,11 +9,9 @@ import java.util.List;
 
 public class CommandManager extends Manager {
 
-	public List<Command> commands = new ArrayList<>();
+	private final List<Command> commands = new ArrayList<>();
 
-	public CommandManager() {
-		MinecraftForge.EVENT_BUS.register(this);
-	}
+	public CommandManager() { MinecraftForge.EVENT_BUS.register(this); }
 
 	public void addCommand(Command command) { this.commands.add(command); }
 
