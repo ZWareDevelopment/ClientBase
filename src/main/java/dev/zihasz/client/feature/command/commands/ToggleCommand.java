@@ -12,16 +12,17 @@ public class ToggleCommand extends Command {
 	}
 
 	@Override
-	public void execute(String[] arguments) {
+	public boolean execute(String[] arguments) {
 		if (arguments.length != 1) {
 			MessageBus.sendErrorMessage("You need to supply exactly one argument!");
-			return;
+			return false;
 		}
 		Module module = Client.moduleManager.getModule(arguments[0]);
 		if (module == null) {
 			MessageBus.sendErrorMessage("You need to supply a valid module name!");
-			return;
+			return false;
 		}
 		module.toggle();
+		return true;
 	}
 }

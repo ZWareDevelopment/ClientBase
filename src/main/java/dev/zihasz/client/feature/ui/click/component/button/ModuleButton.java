@@ -1,68 +1,60 @@
 package dev.zihasz.client.feature.ui.click.component.button;
 
-import dev.zihasz.client.feature.module.Category;
+import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.feature.traits.IClosable;
-import dev.zihasz.client.feature.ui.click.component.Component;
 import dev.zihasz.client.utils.render.Colors;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ModuleButton implements Component, IClosable {
+public class ModuleButton extends Button implements IClosable {
 
-	public final static int MODULE_BUTTON_WIDTH = 100;
-	public final static int MODULE_BUTTON_HEIGHT = 20;
-
-	private final Category category;
-	private final Colors colors;
+	protected final Module module;
 
 	private boolean open = true;
 
-	public ModuleButton(Category category, Colors colors) {
-		this.category = category;
-		this.colors = colors;
+	private final List<SettingButton> settingButtons = new ArrayList<>();
+
+	public ModuleButton(Module module, Rectangle button, Colors colors) {
+		super(button, colors);
+		this.module = module;
 	}
 
 	public void render(Point mouse) {
 
 	}
-
-	public void update(Point mouse) {
-
-	}
-
 	public void onMouseDown(Point mouse, int mb) {
 
 	}
-
 	public void onMouseUp(Point mouse, int mb) {
 
 	}
-
 	public void onKeyTyped(int key, char character) {
 
 	}
-
 	public void onClosed() {
 
 	}
-
 	public int height() {
-		return 0;
+		int height = button.height;
+		if (open) {
+			for (SettingButton<?> settingButton : settingButtons) {
+				height += settingButton.height();
+			}
+		}
+		return height;
 	}
 
 	public boolean isOpen() {
 		return open;
 	}
-
-	public void setOpen(boolean openIn) {
-		open = openIn;
+	public void setOpen(boolean open) {
+		this.open = open;
 	}
 
-	public Category getCategory() {
-		return category;
+	public Module getModule() {
+		return module;
 	}
 
-	public Colors getColors() {
-		return colors;
-	}
 }

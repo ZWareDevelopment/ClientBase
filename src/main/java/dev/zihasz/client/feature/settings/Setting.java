@@ -5,10 +5,10 @@ import java.util.function.Predicate;
 
 public class Setting<T> {
 
-	public final String name, description;
-	public final T min, max;
-	public final Predicate<T> visibility;
-	public final BiFunction<T, T, Boolean> callback;
+	private final String name, description;
+	private final T min, max;
+	private final Predicate<T> visibility;
+	private final BiFunction<T, T, Boolean> callback;
 
 	public T value;
 
@@ -22,15 +22,14 @@ public class Setting<T> {
 		this.callback = callback;
 	}
 
+	public boolean test() { return visibility.test(value); }
+
 	public String getName() { return name; }
 	public String getDescription() { return description; }
 	public T getValue() { return value; }
 	public T getMin() { return min; }
 	public T getMax() { return max; }
 
-	public void setValue(T newValue) {
-		if (callback.apply(value, newValue))
-			value = newValue;
-	}
+	public void setValue(T newValue) { if (callback.apply(value, newValue)) value = newValue; }
 
 }

@@ -33,13 +33,13 @@ public class HoleESP extends Module {
 
 	private Setting<Boolean> glow = new SettingBuilder<>(true).name("Glow").description("Give the holes a glow effect.").build(this);
 	private Setting<Boolean> invert = new SettingBuilder<>(true).name("Invert Glow").description("Invert the glow effect").visibility(v -> glow.getValue()).build(this);
-	private Setting<Integer> alpha = new SettingBuilder<>(0).name("Glow Alpha").description("Changes the \"hidden\" parts alpha.").min(0).max(255).build(this);
+	private Setting<Integer> glowAlpha = new SettingBuilder<>(0).name("Glow Alpha").description("Changes the \"hidden\" parts alpha.").min(0).max(255).build(this);
 
 	private Setting<Boolean> bedrock = new SettingBuilder<>(true).name("Bedrock").description("Render bedrock holes.").build(this);
 	private Setting<Color> bedrockColor = new SettingBuilder<>(new Color(40, 255, 40)).name("Bedrock Color").description("Color of bedrock holes").visibility(v -> bedrock.getValue()).build(this);
 
 	private Setting<Boolean> obsidian = new SettingBuilder<>(true).name("Obsidian").description("Render obsidian holes.").build(this);
-	private Setting<Color> obsidianColor = new SettingBuilder<>(new Color(255, 430, 40)).name("Obsidian Color").description("Color of obsidian holes").visibility(v -> obsidian.getValue()).build(this);
+	private Setting<Color> obsidianColor = new SettingBuilder<>(new Color(255, 40, 40)).name("Obsidian Color").description("Color of obsidian holes").visibility(v -> obsidian.getValue()).build(this);
 
 	@SubscribeEvent
 	public void onTick(TickEvent.ClientTickEvent event) {

@@ -21,8 +21,11 @@ public abstract class Feature {
 	}
 
 	public void addSetting(Setting setting) { this.settings.add(setting); }
-	public Setting<?> getSetting(String name) { return settings.stream().filter(s -> s.name.equals(name)).findFirst().orElse(null); }
+	public Setting<?> getSetting(String name) { return settings.stream().filter(s -> s.getName().equals(name)).findFirst().orElse(null); }
 	public List<Setting> getSettings() { return settings; }
+
+	public String getName() { return name; }
+	public String getDescription() { return description; }
 
 	public boolean nullCheck() { return mc.player == null || mc.world == null; }
 

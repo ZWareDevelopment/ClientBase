@@ -33,6 +33,11 @@ public class SettingBuilder<T> {
 		this.max = max;
 		return this;
 	}
+	public SettingBuilder<T> range(T min, T max) {
+		this.min = min;
+		this.max = max;
+		return this;
+	}
 	public SettingBuilder<T> visibility(Predicate<T> v) {
 		this.visibility = v;
 		return this;

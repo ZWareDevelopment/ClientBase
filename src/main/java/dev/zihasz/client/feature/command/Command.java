@@ -13,7 +13,7 @@ public abstract class Command extends Feature {
 		this.aliases = aliases;
 	}
 
-	public abstract void execute(String[] arguments);
+	public abstract boolean execute(String[] arguments) throws Exception;
 
 	public String getUsage() { return usage; }
 	public String[] getAliases() { return aliases; }

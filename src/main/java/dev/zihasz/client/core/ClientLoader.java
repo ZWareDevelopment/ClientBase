@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Mixins;
 import javax.annotation.Nullable;
 import java.util.Map;
 
-@Name("client")
+@Name(Client.ID)
 @MCVersion(ForgeVersion.mcVersion)
 public class ClientLoader implements IFMLLoadingPlugin {
 

@@ -6,8 +6,6 @@ public interface Component {
 
 	void render(Point mouse);
 
-	void update(Point mouse);
-
 	void onMouseDown(Point mouse, int mb);
 
 	void onMouseUp(Point mouse, int mb);
