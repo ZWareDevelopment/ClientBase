@@ -13,10 +13,10 @@ public class ModulesCommand extends Command {
 	}
 
 	@Override
-	public void execute(String[] arguments) {
+	public boolean execute(String[] arguments) {
 		if (arguments.length > 1) {
 			MessageBus.sendErrorMessage("You need to supply no or zero arguments!");
-			return;
+			return false;
 		}
 		if (arguments.length == 1) {
 			try {
@@ -25,14 +25,17 @@ public class ModulesCommand extends Command {
 				for (Module module : Client.moduleManager.getModules(category)) {
 					MessageBus.sendMessage(module.name);
 				}
+				return true;
 			} catch (IllegalArgumentException exception) {
 				MessageBus.sendErrorMessage("You need to supply a valid category name!");
+				return false;
 			}
 		} else {
 			MessageBus.sendMessage("Modules in all categories:");
 			for (Module module : Client.moduleManager.getModules()) {
 				MessageBus.sendMessage(module.name);
 			}
+			return true;
 		}
 	}
 }
