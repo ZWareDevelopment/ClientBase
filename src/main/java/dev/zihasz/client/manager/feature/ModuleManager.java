@@ -1,9 +1,13 @@
 package dev.zihasz.client.manager.feature;
 
+import dev.zihasz.client.Client;
 import dev.zihasz.client.feature.module.*;
 import dev.zihasz.client.manager.Manager;
 import dev.zihasz.client.utils.client.ReflectionUtils;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent;
+import org.lwjgl.input.Keyboard;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +29,16 @@ public class ModuleManager extends Manager {
 		} catch (InstantiationException | IllegalAccessException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@SubscribeEvent
+	public void onKeyInput(InputEvent.KeyInputEvent event) {
+		if (!Keyboard.getEventKeyState() || Keyboard.getEventKey() == Keyboard.KEY_NONE)
+			return;
+
+		for (Module module : Client.moduleManager.getModules())
+			if (module.getBind() == Keyboard.getEventKey())
+				module.toggle();
 	}
 
 	public void addModule(Module module) { this.modules.add(module); }
