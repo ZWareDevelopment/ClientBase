@@ -6,7 +6,9 @@ import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.feature.traits.IClosable;
 import dev.zihasz.client.ui.click.component.Component;
 import dev.zihasz.client.ui.click.component.button.Button;
+import dev.zihasz.client.ui.click.component.button.ModuleButton;
 import dev.zihasz.client.utils.render.Colors;
+import dev.zihasz.client.utils.render.Renderer2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -27,32 +29,29 @@ public class Frame implements Component, IClosable {
 		this.size = size;
 		this.colors = colors;
 
+		int y = 20;
 		for (Module module : Client.moduleManager.getModules(category)) {
-
+			buttons.add(new ModuleButton(module, new Rectangle(size.x, size.y + y, size.width, size.height), colors));
+			y += size.height;
 		}
 	}
 
-	@Override
 	public void render(Point mouse) {
-
+		Renderer2D.fillRectangle(size, colors.fore);
 	}
 
-	@Override
 	public void onMouseDown(Point mouse, int mb) {
 
 	}
 
-	@Override
 	public void onMouseUp(Point mouse, int mb) {
 
 	}
 
-	@Override
 	public void onKeyTyped(int key, char character) {
 
 	}
 
-	@Override
 	public void onClosed() {
 
 	}

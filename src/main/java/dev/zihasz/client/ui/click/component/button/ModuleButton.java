@@ -3,6 +3,7 @@ package dev.zihasz.client.ui.click.component.button;
 import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.feature.traits.IClosable;
 import dev.zihasz.client.utils.render.Colors;
+import dev.zihasz.client.utils.render.Renderer2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -22,20 +23,26 @@ public class ModuleButton extends Button implements IClosable {
 	}
 
 	public void render(Point mouse) {
-
+		Renderer2D.fillRectangle(button, module.enabled ? colors.fore : colors.back);
 	}
+
 	public void onMouseDown(Point mouse, int mb) {
 
 	}
+
 	public void onMouseUp(Point mouse, int mb) {
 
 	}
+
 	public void onKeyTyped(int key, char character) {
 
 	}
+
 	public void onClosed() {
 
 	}
+
+	@Override
 	public int height() {
 		int height = button.height;
 		if (open) {
