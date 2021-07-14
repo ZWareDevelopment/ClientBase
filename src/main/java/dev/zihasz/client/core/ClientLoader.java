@@ -16,12 +16,16 @@ import java.util.Map;
 public class ClientLoader implements IFMLLoadingPlugin {
 
 	public ClientLoader() {
-		this.initialize();
+
 	}
 
 	public void initialize() {
+		Client.LOGGER.info("Initializing mixins...");
+
 		MixinBootstrap.init();
 		Mixins.addConfiguration("mixins.client.json");
+
+		Client.LOGGER.info("Successfully initialized mixins!");
 	}
 
 	@Override

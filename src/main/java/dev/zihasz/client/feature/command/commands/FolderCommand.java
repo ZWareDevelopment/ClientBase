@@ -1,12 +1,10 @@
 package dev.zihasz.client.feature.command.commands;
 
-import dev.zihasz.client.Client;
 import dev.zihasz.client.feature.command.Command;
 import dev.zihasz.client.manager.config.ConfigManager;
 
 import java.awt.*;
 import java.net.URI;
-import java.nio.file.Paths;
 
 public class FolderCommand extends Command {
 

@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven { url = "https://repo.spongepowered.org/maven" }
     }
 
@@ -30,7 +30,6 @@ minecraft {
     makeObfSourceJar = false
 }
 repositories {
-    jcenter()
     mavenCentral()
     maven { url = 'https://repo.spongepowered.org/maven' }
     maven { url = 'https://jitpack.io/' }
@@ -57,8 +56,6 @@ processResources {
         include 'mcmod.info'
         expand 'version': project.version, 'mcversion': project.minecraft.version
     }
-
-    from(sourceSets.main.resources.srcDirs) { exclude 'mcmod.info' }
 
     rename '(.+_at.cfg)', 'META-INF/$1'
 }

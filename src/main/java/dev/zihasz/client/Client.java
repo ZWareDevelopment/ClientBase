@@ -1,5 +1,6 @@
 package dev.zihasz.client;
 
+import dev.zihasz.client.core.ClientLoader;
 import dev.zihasz.client.manager.config.ConfigManager;
 import dev.zihasz.client.manager.feature.CommandManager;
 import dev.zihasz.client.manager.feature.ModuleManager;
@@ -14,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Client.ID, name = Client.NAME, version = Client.VERSION, certificateFingerprint = "", clientSideOnly = true)
+@Mod(modid = Client.ID, name = Client.NAME, version = Client.VERSION, certificateFingerprint = "", updateJSON = "", clientSideOnly = true)
 public class Client {
 
 	public static final String ID = "client";
@@ -31,6 +32,8 @@ public class Client {
 		INSTANCE = this;
 	}
 
+	public static ClientLoader loader;
+
 	public static CommandManager commandManager;
 	public static ConfigManager configManager;
 	public static ModuleManager moduleManager;
@@ -38,7 +41,8 @@ public class Client {
 
 	@EventHandler
 	public void onPreInit(FMLPreInitializationEvent event) {
-
+		loader = new ClientLoader();
+		loader.initialize();
 	}
 
 	@EventHandler
@@ -46,6 +50,10 @@ public class Client {
 		commandManager = new CommandManager();
 		configManager = new ConfigManager();
 		moduleManager = new ModuleManager();
+
+		configManager.load();
+
+		Runtime.getRuntime().addShutdownHook(new Thread(() -> configManager.save()));
 	}
 
 	@EventHandler

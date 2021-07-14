@@ -3,7 +3,7 @@ package dev.zihasz.client.manager.feature;
 import dev.zihasz.client.feature.command.Command;
 import dev.zihasz.client.manager.Manager;
 import dev.zihasz.client.utils.client.MessageBus;
-import dev.zihasz.client.utils.client.ReflectionUtils;
+import dev.zihasz.client.utils.client.ReflectionUtil;
 import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -23,7 +23,7 @@ public class CommandManager extends Manager {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		try {
-			Set<Class<?>> classes = ReflectionUtils.findClasses(Command.class.getPackage().getName(), Command.class);
+			Set<Class<?>> classes = ReflectionUtil.findClasses(Command.class.getPackage().getName(), Command.class);
 			for (Class<?> clazz : classes) {
 				Command command = (Command) clazz.newInstance();
 				this.addCommand(command);

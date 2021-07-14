@@ -3,7 +3,7 @@ package dev.zihasz.client.manager.feature;
 import dev.zihasz.client.Client;
 import dev.zihasz.client.feature.module.*;
 import dev.zihasz.client.manager.Manager;
-import dev.zihasz.client.utils.client.ReflectionUtils;
+import dev.zihasz.client.utils.client.ReflectionUtil;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
@@ -21,7 +21,7 @@ public class ModuleManager extends Manager {
 	public ModuleManager() {
 		MinecraftForge.EVENT_BUS.register(this);
 		try {
-			Set<Class<?>> classes = ReflectionUtils.findClasses(Module.class.getPackage().getName(), Module.class);
+			Set<Class<?>> classes = ReflectionUtil.findClasses(Module.class.getPackage().getName(), Module.class);
 			for (Class<?> clazz : classes) {
 				Module module = (Module) clazz.newInstance();
 				this.addModule(module);

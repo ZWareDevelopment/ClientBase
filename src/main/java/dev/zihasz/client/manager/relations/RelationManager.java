@@ -27,13 +27,6 @@ public class RelationManager extends Manager {
 		}
 		return false;
 	}
-	public static boolean isAlly(UUID uuid) {
-		for (Relation relation : relations) {
-			if (relation.getType() == RelationType.ALLY && relation.getUuid().equals(uuid))
-				return true;
-		}
-		return false;
-	}
 
 	public static Relation getRelation(UUID uuid) {
 		for (Relation relation : relations) {
