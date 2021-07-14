@@ -1,4 +1,4 @@
-package dev.zihasz.client.feature.ui.click.component.button;
+package dev.zihasz.client.ui.click.component.button;
 
 import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.feature.traits.IClosable;

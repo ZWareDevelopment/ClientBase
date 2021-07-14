@@ -1,4 +1,4 @@
-package dev.zihasz.client.feature.ui;
+package dev.zihasz.client.ui;
 
 import java.io.IOException;
 

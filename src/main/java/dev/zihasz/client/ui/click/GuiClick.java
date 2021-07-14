@@ -1,6 +1,6 @@
-package dev.zihasz.client.feature.ui.click;
+package dev.zihasz.client.ui.click;
 
-import dev.zihasz.client.feature.ui.GuiBase;
+import dev.zihasz.client.ui.GuiBase;
 
 import java.io.IOException;
 

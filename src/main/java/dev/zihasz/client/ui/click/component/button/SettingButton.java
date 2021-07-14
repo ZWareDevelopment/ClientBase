@@ -1,4 +1,4 @@
-package dev.zihasz.client.feature.ui.click.component.button;
+package dev.zihasz.client.ui.click.component.button;
 
 import dev.zihasz.client.feature.settings.Setting;
 import dev.zihasz.client.utils.render.Colors;

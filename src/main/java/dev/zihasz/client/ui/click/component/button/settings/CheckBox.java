@@ -1,14 +1,14 @@
-package dev.zihasz.client.feature.ui.click.component.button.settings;
+package dev.zihasz.client.ui.click.component.button.settings;
 
 import dev.zihasz.client.feature.settings.Setting;
-import dev.zihasz.client.feature.ui.click.component.button.SettingButton;
+import dev.zihasz.client.ui.click.component.button.SettingButton;
 import dev.zihasz.client.utils.render.Colors;
 
 import java.awt.*;
 
-public class TextBox extends SettingButton<String> {
+public class CheckBox extends SettingButton<Boolean> {
 
-	public TextBox(Setting<String> setting, Rectangle button, Colors colors) {
+	public CheckBox(Setting<Boolean> setting, Rectangle button, Colors colors) {
 		super(setting, button, colors);
 	}
 
@@ -19,7 +19,9 @@ public class TextBox extends SettingButton<String> {
 
 	@Override
 	public void onMouseDown(Point mouse, int mb) {
-
+		if (mb == 0 && hovered(mouse)) {
+			setting.setValue(!setting.getValue());
+		}
 	}
 
 	@Override
@@ -36,4 +38,5 @@ public class TextBox extends SettingButton<String> {
 	public void onClosed() {
 
 	}
+
 }

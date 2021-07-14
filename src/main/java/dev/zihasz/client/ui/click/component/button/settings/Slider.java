@@ -1,7 +1,7 @@
-package dev.zihasz.client.feature.ui.click.component.button.settings;
+package dev.zihasz.client.ui.click.component.button.settings;
 
 import dev.zihasz.client.feature.settings.Setting;
-import dev.zihasz.client.feature.ui.click.component.button.SettingButton;
+import dev.zihasz.client.ui.click.component.button.SettingButton;
 import dev.zihasz.client.utils.render.Colors;
 
 import java.awt.*;
