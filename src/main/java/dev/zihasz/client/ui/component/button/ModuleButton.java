@@ -1,7 +1,9 @@
-package dev.zihasz.client.ui.click.component.button;
+package dev.zihasz.client.ui.component.button;
 
 import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.feature.traits.IClosable;
+import dev.zihasz.client.ui.component.button.Button;
+import dev.zihasz.client.ui.component.button.SettingButton;
 import dev.zihasz.client.utils.render.Colors;
 import dev.zihasz.client.utils.render.Renderer2D;
 

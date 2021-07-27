@@ -2,7 +2,7 @@ package dev.zihasz.client.ui.click;
 
 import dev.zihasz.client.feature.module.Category;
 import dev.zihasz.client.ui.GuiBase;
-import dev.zihasz.client.ui.click.component.panel.Frame;
+import dev.zihasz.client.ui.component.panel.Frame;
 import dev.zihasz.client.utils.render.Colors;
 
 import java.awt.*;

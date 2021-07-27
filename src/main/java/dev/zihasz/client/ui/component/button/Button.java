@@ -1,6 +1,6 @@
-package dev.zihasz.client.ui.click.component.button;
+package dev.zihasz.client.ui.component.button;
 
-import dev.zihasz.client.ui.click.component.Component;
+import dev.zihasz.client.ui.component.Component;
 import dev.zihasz.client.utils.render.Colors;
 
 import java.awt.*;

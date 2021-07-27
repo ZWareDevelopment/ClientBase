@@ -1,12 +1,12 @@
-package dev.zihasz.client.ui.click.component.panel;
+package dev.zihasz.client.ui.component.panel;
 
 import dev.zihasz.client.Client;
 import dev.zihasz.client.feature.module.Category;
 import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.feature.traits.IClosable;
-import dev.zihasz.client.ui.click.component.Component;
-import dev.zihasz.client.ui.click.component.button.Button;
-import dev.zihasz.client.ui.click.component.button.ModuleButton;
+import dev.zihasz.client.ui.component.Component;
+import dev.zihasz.client.ui.component.button.Button;
+import dev.zihasz.client.ui.component.button.ModuleButton;
 import dev.zihasz.client.utils.render.Colors;
 import dev.zihasz.client.utils.render.Renderer2D;
 

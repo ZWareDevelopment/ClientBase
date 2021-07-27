@@ -1,4 +1,4 @@
-package dev.zihasz.client.ui.click.component;
+package dev.zihasz.client.ui.component;
 
 import java.awt.*;
 

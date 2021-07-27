@@ -12,6 +12,7 @@ public class SettingBuilder<T> {
 	private T min, max = null;
 	private Predicate<T> visibility = v -> true;
 	private BiFunction<T, T, Boolean> callback = (oldValue, newValue) -> true;
+	private Setting<?> parent = null;
 
 	public SettingBuilder(T value) {
 		this.value = value;
@@ -47,11 +48,17 @@ public class SettingBuilder<T> {
 		return this;
 	}
 
+	public SettingBuilder<T> parent(Setting<?> parent) {
+		this.parent = parent;
+		return this;
+	}
+
 	public Setting<T> build(Feature feature) {
 		if (value == null || name == null || description == null) throw new IllegalStateException("Value/Name/Description cannot be null!");
 
-		Setting<T> setting = new Setting<>(name, description, value, min, max, visibility, callback);
+		Setting<T> setting = new Setting<>(name, description, value, min, max, visibility, callback, parent);
 		feature.addSetting(setting);
+
 		return setting;
 	}
 

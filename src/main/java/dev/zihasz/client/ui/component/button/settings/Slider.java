@@ -1,14 +1,14 @@
-package dev.zihasz.client.ui.click.component.button.settings;
+package dev.zihasz.client.ui.component.button.settings;
 
 import dev.zihasz.client.feature.settings.Setting;
-import dev.zihasz.client.ui.click.component.button.SettingButton;
+import dev.zihasz.client.ui.component.button.SettingButton;
 import dev.zihasz.client.utils.render.Colors;
 
 import java.awt.*;
 
-public class TextBox extends SettingButton<String> {
+public class Slider extends SettingButton<Number> {
 
-	public TextBox(Setting<String> setting, Rectangle button, Colors colors) {
+	public Slider(Setting<Number> setting, Rectangle button, Colors colors) {
 		super(setting, button, colors);
 	}
 
@@ -36,4 +36,5 @@ public class TextBox extends SettingButton<String> {
 	public void onClosed() {
 
 	}
+
 }
