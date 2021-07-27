@@ -1,6 +1,7 @@
 package dev.zihasz.client.feature.settings;
 
 import dev.zihasz.client.feature.Feature;
+import sun.security.mscapi.CPublicKey;
 
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
@@ -50,6 +51,11 @@ public class SettingBuilder<T> {
 
 	public SettingBuilder<T> parent(Setting<?> parent) {
 		this.parent = parent;
+		return this;
+	}
+
+	public SettingBuilder<T> parent(String category, String description) {
+		this.parent = new Setting<Void>(category, description, null, null, null, null, null, null);
 		return this;
 	}
 
