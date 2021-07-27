@@ -60,8 +60,6 @@ public class SettingBuilder<T> {
 	}
 
 	public Setting<T> build(Feature feature) {
-		if (value == null || name == null || description == null) throw new IllegalStateException("Value/Name/Description cannot be null!");
-
 		Setting<T> setting = new Setting<>(name, description, value, min, max, visibility, callback, parent);
 		feature.addSetting(setting);
 
