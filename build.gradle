@@ -28,22 +28,38 @@ minecraft {
 }
 
 repositories {
-    mavenCentral()
-    maven { url = 'https://repo.spongepowered.org/maven' }
-    maven { url = 'https://jitpack.io/' }
+    mavenCentral()                                                  // Maven Central
+    maven { url = 'https://repo.spongepowered.org/maven' }          // SpongePowered
+    maven { url = 'https://impactdevelopment.github.io/maven/' }    // ImpactDevelopment
+    maven { url = 'https://jitpack.io/' }                           // JitPack
 }
 dependencies {
+    // Mixin
     compile('org.spongepowered:mixin:0.8.2') {
         exclude module: 'launchwrapper'
         exclude module: 'guava'
         exclude module: 'gson'
         exclude module: 'commons-io'
     }
+
+    // Reflections
     compile('org.reflections:reflections:0.9.11') {
         exclude module: 'guava'
     }
+
+    // Annotations
     compile 'org.jetbrains:annotations:20.1.0'
+
+    // Discord RPC
     compile 'club.minnced:java-discord-rpc:v2.0.2'
+
+    // TheAltening
+    compile 'com.thealtening.api:api:4.1.0'
+    compile 'com.thealtening.auth:auth:3.0.2'
+
+    // Baritone
+    compile 'com.github.cabaletta:baritone:1.2.14'
+    compile 'com.github.cabaletta.baritone:baritone-api:master-SNAPSHOT'
 }
 
 processResources {
@@ -61,12 +77,27 @@ processResources {
 }
 shadowJar {
     dependencies {
+        // Mixin
         include(dependency('org.spongepowered:mixin'))
+
+        // Reflections
         include(dependency('org.reflections:reflections'))
         include(dependency('net.jodah:typetools'))
         include(dependency('org.javassist:javassist'))
+
+        // Annotations
         include(dependency('org.jetbrains:annotations'))
+
+        // Discord RPC
         include(dependency('club.minnced:java-discord-rpc'))
+
+        // TheAltening
+        include(dependency('com.thealtening.api:api'))
+        include(dependency('com.thealtening.auth:auth'))
+
+        // Baritone
+        include(dependency('com.github.cabaletta:baritone'))
+        include(dependency('com.github.cabaletta.baritone:baritone-api'))
     }
     exclude 'dummyThing'
     exclude 'LICENSE.txt'
