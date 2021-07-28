@@ -30,7 +30,6 @@ minecraft {
 repositories {
     mavenCentral()                                                  // Maven Central
     maven { url = 'https://repo.spongepowered.org/maven' }          // SpongePowered
-    maven { url = 'https://impactdevelopment.github.io/maven/' }    // ImpactDevelopment
     maven { url = 'https://jitpack.io/' }                           // JitPack
 }
 dependencies {
@@ -52,14 +51,6 @@ dependencies {
 
     // Discord RPC
     compile 'club.minnced:java-discord-rpc:v2.0.2'
-
-    // TheAltening
-    compile 'com.thealtening.api:api:4.1.0'
-    compile 'com.thealtening.auth:auth:3.0.2'
-
-    // Baritone
-    compile 'com.github.cabaletta:baritone:1.2.14'
-    compile 'com.github.cabaletta.baritone:baritone-api:master-SNAPSHOT'
 }
 
 processResources {
@@ -90,14 +81,6 @@ shadowJar {
 
         // Discord RPC
         include(dependency('club.minnced:java-discord-rpc'))
-
-        // TheAltening
-        include(dependency('com.thealtening.api:api'))
-        include(dependency('com.thealtening.auth:auth'))
-
-        // Baritone
-        include(dependency('com.github.cabaletta:baritone'))
-        include(dependency('com.github.cabaletta.baritone:baritone-api'))
     }
     exclude 'dummyThing'
     exclude 'LICENSE.txt'
