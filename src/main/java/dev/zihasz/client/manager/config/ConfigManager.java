@@ -7,9 +7,10 @@ import dev.zihasz.client.feature.settings.Setting;
 import dev.zihasz.client.manager.Manager;
 
 import java.awt.*;
-import java.io.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class ConfigManager extends Manager {
@@ -118,12 +119,10 @@ public class ConfigManager extends Manager {
 								colorJson.get("a").getAsFloat()
 						);
 						setting.setValue(color);
-					}
-					// else if (setting.getValue() instanceof Enum)
-					// 	setting.setValue(Enum.valueOf(setting.getValue().getClass(), settingJson.get("value").getAsString()));
-					else {
+					} else if (setting.getValue() instanceof Enum) {
+						setting.setValue(Enum.valueOf(((Enum<?>) setting.getValue()).getClass(), settingJson.get("value").getAsString()));
+					} else
 						throw new IllegalStateException("Illegal setting type!");
-					}
 				}
 
 			}
@@ -165,11 +164,10 @@ public class ConfigManager extends Manager {
 					colorJson.addProperty("a", color.getAlpha());
 
 					settingJson.add("value", colorJson);
-				} else if (setting.getValue() instanceof Enum) {
+				} else if (setting.getValue() instanceof Enum)
 					settingJson.addProperty("value", ((Enum) setting.getValue()).name());
-				} else {
+				else
 					throw new IllegalStateException("Illegal setting type! " + setting.getName());
-				}
 
 				settingsArray.add((settingJson));
 			}

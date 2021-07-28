@@ -1,7 +1,8 @@
 package dev.zihasz.client.manager.feature;
 
 import dev.zihasz.client.Client;
-import dev.zihasz.client.feature.module.*;
+import dev.zihasz.client.feature.module.Category;
+import dev.zihasz.client.feature.module.Module;
 import dev.zihasz.client.manager.Manager;
 import dev.zihasz.client.utils.client.ReflectionUtil;
 import net.minecraftforge.common.MinecraftForge;

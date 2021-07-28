@@ -1,6 +1,6 @@
 package dev.zihasz.client.ui.component.button;
 
-import dev.zihasz.client.feature.module.Module;
+import dev.zihasz.client.feature.hud.HudComponent;
 import dev.zihasz.client.feature.traits.IClosable;
 import dev.zihasz.client.utils.render.Colors;
 import dev.zihasz.client.utils.render.Renderer2D;
@@ -9,21 +9,21 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModuleButton extends Button implements IClosable {
+public class HudButton extends Button implements IClosable {
 
-	protected final Module module;
+	protected final HudComponent component;
 
 	private boolean open = true;
 
 	private final List<SettingButton> settingButtons = new ArrayList<>();
 
-	public ModuleButton(Module module, Rectangle button, Colors colors) {
+	public HudButton(HudComponent component, Rectangle button, Colors colors) {
 		super(button, colors);
-		this.module = module;
+		this.component = component;
 	}
 
 	public void render(Point mouse) {
-		Renderer2D.drawRectangle(button, module.enabled ? colors.fore : colors.back);
+		Renderer2D.drawRectangle(button, component.enabled ? colors.fore : colors.back);
 	}
 
 	public void onMouseDown(Point mouse, int mb) {
@@ -60,8 +60,8 @@ public class ModuleButton extends Button implements IClosable {
 		this.open = open;
 	}
 
-	public Module getModule() {
-		return module;
+	public HudComponent getHudComponent() {
+		return component;
 	}
-
+	
 }

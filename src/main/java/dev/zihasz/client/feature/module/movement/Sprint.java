@@ -17,6 +17,8 @@ public class Sprint extends Module {
 
 	@SubscribeEvent
 	public void onTick(TickEvent.ClientTickEvent event) {
+		if (nullCheck()) return;
+
 		if (mc.player.getFoodStats().getFoodLevel() < 6) {
 			mc.player.setSprinting(mc.gameSettings.keyBindSprint.isKeyDown());
 			return;
@@ -28,6 +30,8 @@ public class Sprint extends Module {
 
 	@Override
 	public void onDisable() {
+		if (nullCheck()) return;
+
 		mc.player.setSprinting(mc.gameSettings.keyBindSprint.isKeyDown());
 	}
 }

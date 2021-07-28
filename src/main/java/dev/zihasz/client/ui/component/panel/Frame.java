@@ -37,7 +37,7 @@ public class Frame implements Component, IClosable {
 	}
 
 	public void render(Point mouse) {
-		Renderer2D.fillRectangle(size, colors.fore);
+		Renderer2D.drawRectangle(size, colors.fore);
 	}
 
 	public void onMouseDown(Point mouse, int mb) {

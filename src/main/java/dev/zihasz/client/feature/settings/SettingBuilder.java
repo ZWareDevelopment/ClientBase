@@ -1,7 +1,6 @@
 package dev.zihasz.client.feature.settings;
 
 import dev.zihasz.client.feature.Feature;
-import sun.security.mscapi.CPublicKey;
 
 import java.util.function.BiFunction;
 import java.util.function.Predicate;

@@ -1,6 +1,5 @@
 package dev.zihasz.client.core;
 
-import net.minecraft.server.dedicated.ServerHangWatchdog;
 import net.minecraftforge.fml.relauncher.IFMLCallHook;
 
 import java.util.Map;

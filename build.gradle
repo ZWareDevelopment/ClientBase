@@ -19,9 +19,6 @@ apply plugin: 'com.github.johnrengelman.shadow'
 group = project.modGroup
 version = project.modVersion
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
-
 minecraft {
     version = project.forgeVersion
     mappings = project.mcpVersion
@@ -29,6 +26,7 @@ minecraft {
     coreMod = 'dev.zihasz.client.core.ClientLoader'
     makeObfSourceJar = false
 }
+
 repositories {
     mavenCentral()
     maven { url = 'https://repo.spongepowered.org/maven' }
@@ -56,6 +54,8 @@ processResources {
         include 'mcmod.info'
         expand 'version': project.version, 'mcversion': project.minecraft.version
     }
+
+    from(sourceSets.main.resources.srcDirs) { exclude 'mcmod.info' }
 
     rename '(.+_at.cfg)', 'META-INF/$1'
 }
