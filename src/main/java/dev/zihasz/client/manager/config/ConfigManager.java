@@ -111,14 +111,7 @@ public class ConfigManager extends Manager {
 					} else if (setting.getValue() instanceof String)
 						setting.setValue(settingJson.get("value").getAsString());
 					else if (setting.getValue() instanceof Color) {
-						JsonObject colorJson = settingJson.getAsJsonObject("value");
-						Color color = new Color(
-								colorJson.get("r").getAsFloat(),
-								colorJson.get("g").getAsFloat(),
-								colorJson.get("b").getAsFloat(),
-								colorJson.get("a").getAsFloat()
-						);
-						setting.setValue(color);
+						setting.setValue(new Color(settingJson.get("value").getAsInt()));
 					} else if (setting.getValue() instanceof Enum) {
 						setting.setValue(Enum.valueOf(((Enum<?>) setting.getValue()).getClass(), settingJson.get("value").getAsString()));
 					} else
@@ -155,15 +148,7 @@ public class ConfigManager extends Manager {
 				else if (setting.getValue() instanceof String)
 					settingJson.addProperty("value", (String) setting.getValue());
 				else if (setting.getValue() instanceof Color) {
-					Color color = (Color) setting.getValue();
-
-					JsonObject colorJson = new JsonObject();
-					colorJson.addProperty("r", color.getRed());
-					colorJson.addProperty("g", color.getGreen());
-					colorJson.addProperty("b", color.getBlue());
-					colorJson.addProperty("a", color.getAlpha());
-
-					settingJson.add("value", colorJson);
+					settingJson.addProperty("value", ((Color) setting.getValue()).getRGB());
 				} else if (setting.getValue() instanceof Enum)
 					settingJson.addProperty("value", ((Enum) setting.getValue()).name());
 				else

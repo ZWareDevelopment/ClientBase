@@ -3,6 +3,7 @@ package dev.zihasz.client;
 import dev.zihasz.client.core.ClientLoader;
 import dev.zihasz.client.manager.config.ConfigManager;
 import dev.zihasz.client.manager.feature.CommandManager;
+import dev.zihasz.client.manager.feature.HudManager;
 import dev.zihasz.client.manager.feature.ModuleManager;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -35,6 +36,7 @@ public class Client {
 
 	public static CommandManager commandManager;
 	public static ConfigManager configManager;
+	public static HudManager hudManager;
 	public static ModuleManager moduleManager;
 
 

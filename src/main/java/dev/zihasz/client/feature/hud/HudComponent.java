@@ -3,13 +3,18 @@ package dev.zihasz.client.feature.hud;
 import dev.zihasz.client.feature.Feature;
 import dev.zihasz.client.feature.traits.IToggleable;
 import net.minecraftforge.common.MinecraftForge;
+import org.lwjgl.input.Mouse;
+
+import java.awt.*;
 
 public abstract class HudComponent extends Feature implements IToggleable {
 
+	public Point location;
 	public boolean enabled;
 
-	public HudComponent(String name, String description) {
+	public HudComponent(String name, String description, Point location) {
 		super(name, description);
+		this.location = location;
 	}
 
 	public void enable() { this.setEnabled(true); }
@@ -31,6 +36,13 @@ public abstract class HudComponent extends Feature implements IToggleable {
 
 	public void onEnable() {}
 	public void onDisable() {}
-	public void render(float ticks) {}
+
+	public abstract void render(float ticks);
+	public abstract float width();
+	public abstract float height();
+
+	protected Point mouse() {
+		return new Point(Mouse.getX(), Mouse.getY());
+	}
 
 }

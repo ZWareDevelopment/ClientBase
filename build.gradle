@@ -28,9 +28,9 @@ minecraft {
 }
 
 repositories {
-    mavenCentral()                                                  // Maven Central
-    maven { url = 'https://repo.spongepowered.org/maven' }          // SpongePowered
-    maven { url = 'https://jitpack.io/' }                           // JitPack
+    mavenCentral()                                          // Maven Central
+    maven { url = 'https://repo.spongepowered.org/maven' }  // SpongePowered
+    maven { url = 'https://jitpack.io/' }                   // JitPack
 }
 dependencies {
     // Mixin
@@ -42,12 +42,12 @@ dependencies {
     }
 
     // Reflections
-    compile('org.reflections:reflections:0.9.11') {
+    compile('org.reflections:reflections:0.9.12') {
         exclude module: 'guava'
     }
 
     // Annotations
-    compile 'org.jetbrains:annotations:20.1.0'
+    compile 'org.jetbrains:annotations:21.0.1'
 
     // Discord RPC
     compile 'club.minnced:java-discord-rpc:v2.0.2'
