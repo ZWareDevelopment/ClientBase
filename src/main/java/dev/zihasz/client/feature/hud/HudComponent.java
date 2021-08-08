@@ -38,8 +38,8 @@ public abstract class HudComponent extends Feature implements IToggleable {
 	public void onDisable() {}
 
 	public abstract void render(float ticks);
-	public abstract float width();
-	public abstract float height();
+	public abstract int width();
+	public abstract int height();
 
 	protected Point mouse() {
 		return new Point(Mouse.getX(), Mouse.getY());
