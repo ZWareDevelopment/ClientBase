@@ -35,14 +35,11 @@ public class TargetComponent extends HudComponent {
 		mc.fontRenderer.drawString(FORMAT.format(player.getHealth()), location.x + 2 + mc.fontRenderer.getStringWidth(mc.player.getName()) + 2, location.y + 2, 0xffffffff);
 	}
 
-	@Override
-	public float width() {
-		return 0;
+	public int width() {
+		return 200;
 	}
-
-	@Override
-	public float height() {
-		return 0;
+	public int height() {
+		return 150;
 	}
 
 }

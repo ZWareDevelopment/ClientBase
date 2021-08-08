@@ -19,7 +19,7 @@ public class Watermark extends HudComponent {
 		mc.fontRenderer.drawString(watermark, location.x, location.y, 0xffffffff);
 	}
 
-	public float width() { return mc.fontRenderer.getStringWidth(watermark); }
-	public float height() { return mc.fontRenderer.FONT_HEIGHT; }
+	public int width() { return mc.fontRenderer.getStringWidth(watermark); }
+	public int height() { return mc.fontRenderer.FONT_HEIGHT; }
 
 }
