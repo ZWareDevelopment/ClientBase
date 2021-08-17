@@ -6,6 +6,9 @@ import java.util.UUID;
 
 public class Relation {
 
+	/**
+	 * The name of the relation.
+	 */
 	private final String name;
 	private final UUID uuid;
 	private final RelationType type;

@@ -2,6 +2,8 @@ package dev.zihasz.client.ui.editor;
 
 import dev.zihasz.client.Client;
 import dev.zihasz.client.feature.hud.HudComponent;
+import dev.zihasz.client.feature.module.client.HUDEditor;
+import dev.zihasz.client.utils.client.MessageBus;
 import dev.zihasz.client.utils.render.Colors;
 import dev.zihasz.client.utils.render.Renderer2D;
 import net.minecraft.client.gui.GuiScreen;
@@ -16,10 +18,14 @@ public class GuiEditor extends GuiScreen {
 	private HudComponent drag = null;
 	private Point dragLocation = null;
 
-	public GuiEditor() {}
+	public GuiEditor() {
+		MessageBus.sendDebugMessage("GuiEditor created");
+	}
 
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+		super.drawScreen(mouseX, mouseY, partialTicks);
+
 		for (HudComponent component : Client.hudManager.getComponents()) {
 			component.render(partialTicks);
 			Renderer2D.drawRectangle(
@@ -37,6 +43,8 @@ public class GuiEditor extends GuiScreen {
 
 	@Override
 	protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
+		super.mouseClicked(mouseX, mouseY, mouseButton);
+
 		Point mouse = new Point(mouseX, mouseY);
 		HudComponent component = getHovered(mouse);
 		if (component != null) {
@@ -52,8 +60,18 @@ public class GuiEditor extends GuiScreen {
 
 	@Override
 	protected void mouseReleased(int mouseX, int mouseY, int state) {
+		super.mouseReleased(mouseX, mouseY, state);
+
 		drag = null;
 		dragLocation = null;
+	}
+
+
+
+	@Override
+	public void onGuiClosed() {
+		Client.moduleManager.getModule(HUDEditor.class).setEnabled(false);
+		super.onGuiClosed();
 	}
 
 	private Rectangle getRectFromComp(HudComponent component) {
