@@ -23,7 +23,7 @@ minecraft {
     version = project.forgeVersion
     mappings = project.mcpVersion
     runDir = 'run'
-    coreMod = 'dev.zihasz.client.core.ClientLoader'
+    coreMod = 'dev.zihasz.zware.core.ClientLoader'
     makeObfSourceJar = false
 }
 
@@ -33,7 +33,6 @@ repositories {
     maven { url = 'https://jitpack.io/' }                   // JitPack
 }
 dependencies {
-    // Mixin
     compile('org.spongepowered:mixin:0.8.2') {
         exclude module: 'launchwrapper'
         exclude module: 'guava'
@@ -41,16 +40,19 @@ dependencies {
         exclude module: 'commons-io'
     }
 
-    // Reflections
     compile('org.reflections:reflections:0.9.12') {
         exclude module: 'guava'
     }
 
-    // Annotations
-    compile 'org.jetbrains:annotations:21.0.1'
+    compile 'org.jetbrains:annotations:22.0.0'
 
-    // Discord RPC
     compile 'club.minnced:java-discord-rpc:v2.0.2'
+
+    compile 'com.github.cabaletta:baritone:1.2.14'
+    compile 'com.github.cabaletta.baritone:baritone-api:master-SNAPSHOT'
+
+    compile 'com.thealtening.auth:auth:3.0.2'
+    compile 'com.thealtening.api:api:4.1.0'
 }
 
 processResources {
@@ -81,6 +83,8 @@ shadowJar {
 
         // Discord RPC
         include(dependency('club.minnced:java-discord-rpc'))
+
+
     }
     exclude 'dummyThing'
     exclude 'LICENSE.txt'
@@ -89,7 +93,7 @@ shadowJar {
 
 mixin {
     defaultObfuscationEnv searge
-    add sourceSets.main, 'mixins.client.refmap.json'
+    add sourceSets.main, 'mixins.zware.refmap.json'
 }
 reobf {
     shadowJar {
@@ -101,13 +105,13 @@ reobf {
 jar {
     manifest {
         attributes(
-                'MixinConfigs': 'mixins.client.json',
+                'MixinConfigs': 'mixins.zware.json',
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'dev.zihasz.client.core.ClientLoader',
+                'FMLCorePlugin': 'dev.zihasz.zware.core.ClientLoader',
                 'ForceLoadAsMod': 'true',
-                'FMLAT': 'client_at.cfg'
+                'FMLAT': 'zware_at.cfg'
         )
     }
 }
