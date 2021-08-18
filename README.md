@@ -1,25 +1,3 @@
-# ZWare.cc
+# Client
 
-Combat
-* PistonAura
-
-Misc
-* CaveFinder
-
-Movement
-* ElytraHelper
-  * Yaw
-  * Rocket
-* Strafe
-
-Player
-* AntiRubberband
-
-Render
-* PopChams
-* Rubberband ESP
-* Tracers
-    * Track player(s)
-* ArrowESP
-    * Track player(s)
-    
+A new installment of ClientBase. (would be ClientBase 3.0)
